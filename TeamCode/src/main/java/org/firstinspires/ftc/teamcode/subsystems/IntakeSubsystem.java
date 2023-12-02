@@ -17,7 +17,7 @@ public class IntakeSubsystem extends SubsystemBase {
     private final FtcDashboard dashboard = FtcDashboard.getInstance();
     private final TelemetryPacket packet = new TelemetryPacket();
 
-    private CRServo intakeServo;
+    private final CRServo intakeServo;
 
     private Modes currentMode;
 
@@ -37,14 +37,14 @@ public class IntakeSubsystem extends SubsystemBase {
         //FIXME placeholder values
         switch(currentMode) {
             case INTAKE:
-                intakeServo.set(0);
+                intakeServo.set(Constants.Intake.ModePowers.INTAKE);
                 break;
             case OUTTAKE:
-                intakeServo.set(0);
+                intakeServo.set(Constants.Intake.ModePowers.OUTTAKE);
                 break;
             case OFF:
             default:
-                intakeServo.set(0);
+                intakeServo.set(Constants.Intake.ModePowers.OFF);
         }
     }
 

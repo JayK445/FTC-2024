@@ -31,9 +31,10 @@ public final class Constants {
     }
 
     public static final class Slide {
+        //FIXME placeholder
         public static final class Setpoints {
             public static final double STOWED = 0;
-            public static final double MAXIMUM_EXTENSION = 20;
+            public static final double MAXIMUM_EXTENSION = 20; //especially this
             public static final double SCORE = 10;
         }
     }
@@ -42,8 +43,8 @@ public final class Constants {
         public static final class ModePowers {
             //FIXME placeholder values
             public static final double OFF = 0;
-            public static final double INTAKE = 0.5;
-            public static final double OUTTAKE = -0.5;
+            public static final double INTAKE = 1;
+            public static final double OUTTAKE = -1;
         }
     }
 
